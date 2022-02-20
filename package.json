@@ -1,0 +1,24 @@
+{
+  "name": "fastify-hello",
+  "version": "1.0.0",
+  "description": "学习fastify",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node app/main.js",
+    "dev": "node app/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/half-web/fastify-hello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/half-web/fastify-hello/issues"
+  },
+  "homepage": "https://github.com/half-web/fastify-hello#readme",
+  "dependencies": {
+    "fastify": "^3.27.2"
+  }
+}
