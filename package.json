@@ -1,24 +1,50 @@
 {
-  "name": "fastify-hello",
-  "version": "1.0.0",
-  "description": "学习fastify",
-  "main": "index.js",
-  "scripts": {
-    "serve": "node app/main.js",
-    "dev": "node app/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/half-web/fastify-hello.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/half-web/fastify-hello/issues"
-  },
-  "homepage": "https://github.com/half-web/fastify-hello#readme",
-  "dependencies": {
-    "fastify": "^3.27.2"
-  }
+    "name": "fastify-hello",
+    "version": "1.0.0",
+    "description": "学习fastify",
+    "main": "src/server.ts",
+    "scripts": {
+        "build:prod": "cross-env NODE_ENV=production next build",
+        "serve-app": "node app/main.js",
+        "serve": "npx pm2 start src/server.ts",
+        "dev-app": "cross-env NODE_ENV=development nodemon app/main.js",
+        "dev": "nodemon --inspect --exec 'node --inspect=0.0.0.0:9229 --require ts-node/register src/server.ts'",
+        "deploy": "sh ./shell/upload.sh",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/half-web/fastify-hello.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/half-web/fastify-hello/issues"
+    },
+    "homepage": "https://github.com/half-web/fastify-hello#readme",
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "fastify": "^3.19.1",
+        "fastify-nextjs": "^6.0.0",
+        "next": "^11.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^16.3.1",
+        "@types/react": "^17.0.14",
+        "@typescript-eslint/eslint-plugin": "^4.28.3",
+        "@typescript-eslint/parser": "^4.28.3",
+        "eslint": "^7.30.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "fastify-tsconfig": "^1.0.1",
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.12",
+        "prettier": "^2.3.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "sass": "^1.49.9",
+        "sass-loader": "^12.6.0",
+        "ts-node": "^10.1.0",
+        "typescript": "^4.3.5"
+    }
 }

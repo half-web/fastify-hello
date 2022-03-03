@@ -1,0 +1,11 @@
+{
+    "verbose": true,
+    "watch": [
+      "src/**"
+    ],
+    "ignore": [
+      "src/**/*.spec.ts"
+    ],
+    "delay": "1000"
+  }
+  
