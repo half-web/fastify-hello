@@ -1,9 +1,7 @@
-import Header from '../component/header';
-
 function Home() {
     return (
         <div>
-            <Header></Header>
+            <h1>Hello，王木木！</h1>
         </div>
     );
 }

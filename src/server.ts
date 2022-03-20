@@ -14,7 +14,10 @@ fastify
         fastify.next('/home');
         fastify.next('/counter');
         fastify.next('/about');
+        fastify.next('/post');
         fastify.next('/post/**/*');
+        fastify.next('/js/*');
+        fastify.next('/wasm/**/*');
     });
 
 fastify.get('/health', async () => {
