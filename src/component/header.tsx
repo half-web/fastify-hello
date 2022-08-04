@@ -12,6 +12,9 @@ export default function Header() {
                     <Link href="/about">
                         <span>About Us</span>
                     </Link>
+                    {/* <Link href="/post/">
+                        <span>Blog Post</span>
+                    </Link> */}
                     <a href="/post">
                         <span>Blog Post</span>
                     </a>

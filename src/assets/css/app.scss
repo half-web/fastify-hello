@@ -7,6 +7,28 @@ body {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.9);
 }
+h1 {
+    margin: 22px 0;
+}
+h2 {
+    margin: 20px 0;
+}
+h3 {
+    margin: 18px 0;
+}
+h4, h5 {
+    margin: 22px 0;
+}
+hr {
+    margin: 8px 0;
+}
+pre {
+    margin: 13px 0;
+}
+p {
+    margin: 16px 0;
+}
+
 a {
     color: rgba(229, 231, 235);
     cursor: pointer;
@@ -63,5 +85,16 @@ a {
                 color: rgba(229, 231, 235);
             }
         }
+    }
+}
+
+.__beian__ {
+    position: fixed;
+    bottom: 10px;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    span {
+        margin-right: 10px;
     }
 }

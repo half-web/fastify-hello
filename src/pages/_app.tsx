@@ -22,6 +22,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <div className="main-view">
                 <Component {...pageProps} />
             </div>
+            <div className="__beian__">
+                <span>www.halfweb.site 2022 @ All rights Reserved</span>
+                <a href="https://beian.miit.gov.cn/" target="_blank">
+                    京ICP备2022005705号-1
+                </a>
+            </div>
         </div>
     );
 }

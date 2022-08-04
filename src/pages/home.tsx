@@ -1,7 +1,7 @@
 function Home() {
     return (
         <div>
-            <h1>Hello，王木木！</h1>
+            <h1>Hello，Welcome to Halfweb.site！</h1>
         </div>
     );
 }
